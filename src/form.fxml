@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormController">
+   <children>
+      <AnchorPane prefHeight="92.0" prefWidth="602.0" style="-fx-background-color: #28384a;">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/gstlogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="15.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="welcome" prefHeight="23.0" prefWidth="446.0" text="Welcome _" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="40.0" top="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Button fx:id="button_logout" mnemonicParsing="false" prefHeight="7.0" prefWidth="70.0" style="-fx-background-color: white;" text="Logout" textFill="#28384a" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="502.0" prefWidth="894.0">
+         <children>
+            <TabPane fx:id="tabpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="894.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab fx:id="tab1" text="Mathematics-III">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="600.0">
+                           <children>
+                              <Button fx:id="next1" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #28384a; -fx-cursor: pointer;" text="Next" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="473.0" prefWidth="797.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0">
+                                 <content>
+                                    <VBox alignment="CENTER" prefHeight="561.0" prefWidth="768.0">
+                                       <children>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="How would you rate your overall learning experience with this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Excellent">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q01" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Good" toggleGroup="$q01">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Average" toggleGroup="$q01">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Poor" toggleGroup="$q01">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="110.0" prefHeight="190.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="21.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="What teaching methods or strategies employed by this teacher do you find most effective for your learning, and why?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Lecture-style teaching">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q02" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Interactive discussions" toggleGroup="$q02">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Group projects and collaboration" toggleGroup="$q02">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Visual aids and multimedia" toggleGroup="$q02">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="9.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Are there any areas in which you feel this teacher could improve in terms of their teaching style, communication, or classroom management?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Improved clarity in explanations">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q03" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="More engaging activities" toggleGroup="$q03">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Better communication with students" toggleGroup="$q03">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Stronger classroom discipline" toggleGroup="$q03">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Do you feel comfortable asking questions and seeking clarification from this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Yes, always">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q04" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$q04">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Rarely" toggleGroup="$q04">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="No, never" toggleGroup="$q04">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="54.0" prefWidth="890.0" text="How would you describe the teacher's approachability and willingness to address your questions and concerns outside of class?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Very Approachable">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q05" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Approachable" toggleGroup="$q05">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Somewhat Approachable" toggleGroup="$q05">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Not Very Approachable" toggleGroup="$q05">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab2" text="DSGT         ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="600.0">
+                           <children>
+                              <Button fx:id="next2" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #28384a; -fx-cursor: pointer;" text="Next" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="473.0" prefWidth="797.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0">
+                                 <content>
+                                    <VBox alignment="CENTER" prefHeight="561.0" prefWidth="768.0">
+                                       <children>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="How would you rate your overall learning experience with this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Excellent">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q11" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Good" toggleGroup="$q11">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Average" toggleGroup="$q11">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Poor" toggleGroup="$q11">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="110.0" prefHeight="190.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="21.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="What teaching methods or strategies employed by this teacher do you find most effective for your learning, and why?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Lecture-style teaching">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q12" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Interactive discussions" toggleGroup="$q12">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Group projects and collaboration" toggleGroup="$q12">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Visual aids and multimedia" toggleGroup="$q12">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="9.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Are there any areas in which you feel this teacher could improve in terms of their teaching style, communication, or classroom management?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Improved clarity in explanations">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q13" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="More engaging activities" toggleGroup="$q13">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Better communication with students" toggleGroup="$q13">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Stronger classroom discipline" toggleGroup="$q13">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Do you feel comfortable asking questions and seeking clarification from this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Yes, always">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q14" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$q14">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Rarely" toggleGroup="$q14">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="No, never" toggleGroup="$q14">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="How would you describe the teacher's approachability and willingness to address your questions and concerns outside of class?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Very Approachable">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q15" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Approachable" toggleGroup="$q15">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Somewhat Approachable" toggleGroup="$q15">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Not Very Approachable" toggleGroup="$q15">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab3" text="DS             ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="600.0">
+                           <children>
+                              <Button fx:id="next3" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #28384a; -fx-cursor: pointer;" text="Next" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="473.0" prefWidth="797.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0">
+                                 <content>
+                                    <VBox alignment="CENTER" prefHeight="561.0" prefWidth="768.0">
+                                       <children>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="How would you rate your overall learning experience with this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Excellent">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q21" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Good" toggleGroup="$q21">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Average" toggleGroup="$q21">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Poor" toggleGroup="$q21">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="110.0" prefHeight="190.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="21.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="What teaching methods or strategies employed by this teacher do you find most effective for your learning, and why?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Lecture-style teaching">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q22" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Interactive discussions" toggleGroup="$q22">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Group projects and collaboration" toggleGroup="$q22">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Visual aids and multimedia" toggleGroup="$q22">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="9.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Are there any areas in which you feel this teacher could improve in terms of their teaching style, communication, or classroom management?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Improved clarity in explanations">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q23" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="More engaging activities" toggleGroup="$q23">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Better communication with students" toggleGroup="$q23">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Stronger classroom discipline" toggleGroup="$q23">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Do you feel comfortable asking questions and seeking clarification from this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Yes, always">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q24" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$q24">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Rarely" toggleGroup="$q24">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="No, never" toggleGroup="$q24">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="How would you describe the teacher's approachability and willingness to address your questions and concerns outside of class?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Very Approachable">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q25" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Approachable" toggleGroup="$q25">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Somewhat Approachable" toggleGroup="$q25">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Not Very Approachable" toggleGroup="$q25">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab4" text="DLCOA        ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="600.0">
+                           <children>
+                              <Button fx:id="next4" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #28384a; -fx-cursor: pointer;" text="Next" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="473.0" prefWidth="797.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.39999999999998">
+                                 <content>
+                                    <VBox alignment="CENTER" prefHeight="561.0" prefWidth="768.0">
+                                       <children>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="How would you rate your overall learning experience with this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Excellent">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q31" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Good" toggleGroup="$q31">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Average" toggleGroup="$q31">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Poor" toggleGroup="$q31">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="110.0" prefHeight="190.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="21.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="What teaching methods or strategies employed by this teacher do you find most effective for your learning, and why?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Lecture-style teaching">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q32" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Interactive discussions" toggleGroup="$q32">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Group projects and collaboration" toggleGroup="$q32">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Visual aids and multimedia" toggleGroup="$q32">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="9.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Are there any areas in which you feel this teacher could improve in terms of their teaching style, communication, or classroom management?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Improved clarity in explanations">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q33" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="More engaging activities" toggleGroup="$q33">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Better communication with students" toggleGroup="$q33">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Stronger classroom discipline" toggleGroup="$q33">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Do you feel comfortable asking questions and seeking clarification from this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton graphicTextGap="0.0" layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Yes, always">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q34" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton graphicTextGap="0.0" layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$q34">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton graphicTextGap="0.0" layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Rarely" toggleGroup="$q34">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton graphicTextGap="0.0" layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="No, never" toggleGroup="$q34">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="How would you describe the teacher's approachability and willingness to address your questions and concerns outside of class?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Very Approachable">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q35" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Approachable" toggleGroup="$q35">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Somewhat Approachable" toggleGroup="$q35">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Not Very Approachable" toggleGroup="$q35">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab5" text="CG            ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="600.0">
+                           <children>
+                              <Button fx:id="form_submit" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #28384a; -fx-cursor: pointer;" text="Submit" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="473.0" prefWidth="797.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.39999999999998">
+                                 <content>
+                                    <VBox alignment="CENTER" prefHeight="561.0" prefWidth="768.0">
+                                       <children>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="How would you rate your overall learning experience with this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Excellent">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q41" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Good" toggleGroup="$q41">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Average" toggleGroup="$q41">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Poor" toggleGroup="$q41">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="110.0" prefHeight="190.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="21.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="What teaching methods or strategies employed by this teacher do you find most effective for your learning, and why?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Lecture-style teaching">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q42" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Interactive discussions" toggleGroup="$q42">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Group projects and collaboration" toggleGroup="$q42">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Visual aids and multimedia" toggleGroup="$q42">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="9.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Are there any areas in which you feel this teacher could improve in terms of their teaching style, communication, or classroom management?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Improved clarity in explanations">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q43" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="More engaging activities" toggleGroup="$q43">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Better communication with students" toggleGroup="$q43">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Stronger classroom discipline" toggleGroup="$q43">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="698.0" text="Do you feel comfortable asking questions and seeking clarification from this teacher?">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Yes, always">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q44" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$q44">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Rarely" toggleGroup="$q44">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="No, never" toggleGroup="$q44">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="768.0">
+                                             <children>
+                                                <Label layoutX="23.0" layoutY="14.0" prefHeight="63.0" prefWidth="740.0" text="How would you describe the teacher's approachability and willingness to address your questions and concerns outside of class?" wrapText="true">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton layoutX="33.0" layoutY="63.0" mnemonicParsing="false" text="Very Approachable">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="q45" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="92.0" mnemonicParsing="false" text="Approachable" toggleGroup="$q45">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="120.0" mnemonicParsing="false" text="Somewhat Approachable" toggleGroup="$q45">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="33.0" layoutY="150.0" mnemonicParsing="false" text="Not Very Approachable" toggleGroup="$q45">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>

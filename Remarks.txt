@@ -1,0 +1,20 @@
+Mathematics: 
+	Rating: 3
+	Teaching Method must be preferred: Lecture-style teaching
+
+DSGT: 
+	Rating: 4
+	Teaching Method must be preferred: Lecture-style teaching
+
+DS: 
+	Rating: 3
+	Teaching Method must be preferred: Lecture-style teaching
+
+DLCOA: 
+	Rating: 3
+	Teaching Method must be preferred: Lecture-style teaching
+
+CG: 
+	Rating: 4
+	Teaching Method must be preferred: Lecture-style teaching
+
